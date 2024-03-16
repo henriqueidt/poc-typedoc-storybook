@@ -1,10 +1,14 @@
-interface ButtonProps {
+export interface ButtonProps {
   /** The text to display inside the button */
   title: string;
-  /** Whether the button can be interacted with */
+  /**
+   * Whether the button can be interacted with
+   * @default false */
   disabled: boolean;
 }
 
-export default function Button({ title, disabled }: ButtonProps) {
+const Button = ({ title, disabled }: ButtonProps) => {
   return <button disabled={disabled}>{title}</button>;
-}
+};
+
+export { Button };

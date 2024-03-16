@@ -5,7 +5,7 @@ async function main() {
   // Also accepts an array of option readers if you want to disable
   // TypeDoc's tsconfig.json/package.json/typedoc.json option readers
   const app = await TypeDoc.Application.bootstrapWithPlugins({
-    entryPoints: ["src/**/*.tsx", "src/**/*.ts"],
+    entryPoints: ["src/components/**/*.tsx"],
   });
 
   const project = await app.convert();
