@@ -10,6 +10,7 @@ async function main() {
     // Found typedoc-plugin-markdown which can be used to generate the docs as markdown
     // We can use markdown in storybook mdx
     plugin: ["typedoc-plugin-markdown"],
+    allReflectionsHaveOwnDocument: true,
   });
 
   const project = await app.convert();
