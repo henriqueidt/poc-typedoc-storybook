@@ -17,7 +17,7 @@ async function main() {
 
   if (project) {
     // Project contains the three of files. Might be able to use it to generate the html for each component
-    console.log(project);
+    // console.log(project);
     // Project may not have converted correctly
     const outputDir = "docs";
 
