@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reflections: (header) should compile template with breadcrumbs and without title 1`] = `
+"[helper: breadcrumbs]
+
+[helper: toc]
+
+[partial: members]
+"
+`;
+
+exports[`Reflections: (template) should compile a callable reflection 1`] = `
+"# Interface: CallableReflection
+
+## Callable
+
+### CallableReflection
+
+[partial: member.signature]
+
+[partial: members]
+"
+`;
+
+exports[`Reflections: (template) should compile an indexable reflection 1`] = `
+"# Interface: IndexableReflection
+
+## Indexable
+
+▪ [index: \`number\`]: \`string\`
+
+[partial: comment]
+
+[partial: members]
+"
+`;
