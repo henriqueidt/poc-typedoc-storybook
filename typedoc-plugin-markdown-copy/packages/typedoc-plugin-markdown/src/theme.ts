@@ -51,9 +51,9 @@ export class MarkdownTheme extends Theme {
 
   constructor(renderer: Renderer) {
     super(renderer);
-
-    // prettier-ignore
-    this.allReflectionsHaveOwnDocument = this.getOption('allReflectionsHaveOwnDocument',) as boolean;
+    this.allReflectionsHaveOwnDocument = this.getOption(
+      'allReflectionsHaveOwnDocument',
+    ) as boolean;
     this.entryDocument = this.getOption('entryDocument') as string;
     this.entryPoints = this.getOption('entryPoints') as string[];
     this.filenameSeparator = this.getOption('filenameSeparator') as string;
