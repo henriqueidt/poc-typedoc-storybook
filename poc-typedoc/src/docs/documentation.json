@@ -1,0 +1,418 @@
+{
+	"id": 0,
+	"name": "poc-typedoc",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "Button",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "Button.tsx",
+					"line": 30,
+					"character": 13
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "Button",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Primary UI component for user interaction"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "Button.tsx",
+							"line": 30,
+							"character": 22
+						}
+					],
+					"parameters": [
+						{
+							"id": 3,
+							"name": "__namedParameters",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 4,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 6,
+											"name": "backgroundColor",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "What background color to use"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "Button.tsx",
+													"line": 44,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 8,
+											"name": "label",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Button contents"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "Button.tsx",
+													"line": 52,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 9,
+											"name": "onClick",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "Button.tsx",
+													"line": 56,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 10,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "Button.tsx",
+															"line": 56,
+															"character": 12
+														}
+													],
+													"signatures": [
+														{
+															"id": 11,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Optional click handler"
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "Button.tsx",
+																	"line": 56,
+																	"character": 12
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 5,
+											"name": "primary",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Is this the principal call to action on the page?"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "Button.tsx",
+													"line": 40,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										},
+										{
+											"id": 7,
+											"name": "size",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "How large should the button be?"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "Button.tsx",
+													"line": 48,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "small"
+													},
+													{
+														"type": "literal",
+														"value": "medium"
+													},
+													{
+														"type": "literal",
+														"value": "large"
+													}
+												]
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												6,
+												8,
+												9,
+												5,
+												7
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "Button.tsx",
+											"line": 36,
+											"character": 3
+										}
+									]
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/@types/react/ts5.0/jsx-runtime.d.ts",
+							"qualifiedName": "JSX.Element"
+						},
+						"name": "Element",
+						"package": "@types/react",
+						"qualifiedName": "JSX.Element"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Functions",
+			"children": [
+				1
+			]
+		}
+	],
+	"packageName": "poc-typedoc",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### "
+		},
+		{
+			"kind": "code",
+			"text": "`npm start`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in the browser.\n\nThe page will reload if you make edits.\\\nYou will also see any lint errors in the console.\n\n### "
+		},
+		{
+			"kind": "code",
+			"text": "`npm test`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### "
+		},
+		{
+			"kind": "code",
+			"text": "`npm run build`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nBuilds the app for production to the "
+		},
+		{
+			"kind": "code",
+			"text": "`build`"
+		},
+		{
+			"kind": "text",
+			"text": " folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### "
+		},
+		{
+			"kind": "code",
+			"text": "`npm run eject`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n**Note: this is a one-way operation. Once you "
+		},
+		{
+			"kind": "code",
+			"text": "`eject`"
+		},
+		{
+			"kind": "text",
+			"text": ", you can’t go back!**\n\nIf you aren’t satisfied with the build tool and configuration choices, you can "
+		},
+		{
+			"kind": "code",
+			"text": "`eject`"
+		},
+		{
+			"kind": "text",
+			"text": " at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except "
+		},
+		{
+			"kind": "code",
+			"text": "`eject`"
+		},
+		{
+			"kind": "text",
+			"text": " will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.\n\nYou don’t have to ever use "
+		},
+		{
+			"kind": "code",
+			"text": "`eject`"
+		},
+		{
+			"kind": "text",
+			"text": ". The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/)."
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "Button"
+		},
+		"2": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "Button"
+		},
+		"3": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__0"
+		},
+		"4": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__type"
+		},
+		"5": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__type.primary"
+		},
+		"6": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__type.backgroundColor"
+		},
+		"7": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__type.size"
+		},
+		"8": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__type.label"
+		},
+		"9": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__type.onClick"
+		},
+		"10": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__type"
+		},
+		"11": {
+			"sourceFileName": "src/components/Button/Button.tsx",
+			"qualifiedName": "__type"
+		}
+	}
+}

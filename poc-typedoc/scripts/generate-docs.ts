@@ -19,7 +19,7 @@ async function main() {
     // Project contains the three of files. Might be able to use it to generate the html for each component
     // console.log(project);
     // Project may not have converted correctly
-    const outputDir = "docs";
+    const outputDir = "src/docs";
 
     // Rendered docs
     await app.generateDocs(project, outputDir);

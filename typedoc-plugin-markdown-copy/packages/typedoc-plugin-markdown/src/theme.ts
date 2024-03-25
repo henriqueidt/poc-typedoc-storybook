@@ -153,7 +153,24 @@ export class MarkdownTheme extends Theme {
   }
 
   toUrl(mapping: any, reflection: DeclarationReflection) {
-    return mapping.directory + '/' + this.getUrl(reflection) + '.md';
+    // console.log('reflection', reflection.sources?.[0].fullFileName);
+    // console.log('reflection', reflection.name);
+    // // console.log('FILE URL', this.getUrl(reflection));
+    // // console.log(
+    // //   'DESTINATION',
+    // //   mapping.directory + '/' + this.getUrl(reflection) + '.mdx',
+    // // );
+
+    // // const reflectionDir = reflection.sources?.[0].fullFileName.replace(
+    // //   reflection.sources?.[0].fileName,
+    // //   '',
+    // // );
+
+    // return (
+    //   reflection.name.toLowerCase() + '/' + this.getUrl(reflection) + '.mdx'
+    // );
+
+    return mapping.directory + '/' + this.getUrl(reflection) + '.mdx';
   }
 
   getUrl(reflection: Reflection, relative?: Reflection): string {

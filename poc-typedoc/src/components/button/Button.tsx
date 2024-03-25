@@ -1,20 +1,69 @@
-export interface ButtonProps {
-  /** The text to display inside the button */
-  title: string;
+import React from 'react';
+import './button.css';
+
+interface ButtonProps {
   /**
-   * Whether the button can be interacted with
-   * @default false */
-  disabled: boolean;
+   * Is this the principal call to action on the page?
+   */
+  primary?: boolean;
+  /**
+   * What background color to use
+   */
+  backgroundColor?: string;
+  /**
+   * How large should the button be?
+   */
+  size?: 'small' | 'medium' | 'large';
+  /**
+   * Button contents
+   */
+  label: string;
+  /**
+   * Optional click handler
+   */
+  onClick?: () => void;
 }
 
 /**
- * Renders a button.
- *
- * @param title the title of the button.
- * @returns a button
+ * Primary UI component for user interaction
  */
-const Button = ({ title, disabled }: ButtonProps) => {
-  return <button disabled={disabled}>{title}</button>;
+export const Button = ({
+  primary = false,
+  size = 'medium',
+  backgroundColor,
+  label,
+  ...props
+}: {
+  /**
+   * Is this the principal call to action on the page?
+   */
+  primary?: boolean;
+  /**
+   * What background color to use
+   */
+  backgroundColor?: string;
+  /**
+   * How large should the button be?
+   */
+  size?: 'small' | 'medium' | 'large';
+  /**
+   * Button contents
+   */
+  label: string;
+  /**
+   * Optional click handler
+   */
+  onClick?: () => void;
+}) => {
+  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  return (
+    <button
+      type="button"
+      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      style={{ backgroundColor }}
+      {...props}
+    >
+      {label}
+    </button>
+  );
 };
-
-export { Button };

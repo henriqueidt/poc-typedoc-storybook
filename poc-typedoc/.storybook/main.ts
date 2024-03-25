@@ -1,5 +1,6 @@
 import remarkGfm from "remark-gfm";
 import type { StorybookConfig } from "@storybook/react-webpack5";
+const webpackConfig = require('./webpack-config');
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -29,5 +30,6 @@ const config: StorybookConfig = {
     autodocs: "tag",
   },
   staticDirs: ["../public"],
+  webpackFinal: webpackConfig
 };
 export default config;

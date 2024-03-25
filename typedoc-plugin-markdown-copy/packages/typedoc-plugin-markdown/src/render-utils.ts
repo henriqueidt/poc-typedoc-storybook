@@ -27,6 +27,7 @@ import tocHelper from './resources/helpers/toc';
 import typeHelper from './resources/helpers/type';
 import typeAndParentHelper from './resources/helpers/type-and-parent';
 import typeParameterTableHelper from './resources/helpers/type-parameter-table';
+import storybookHelper from './resources/helpers/storybook'
 import { MarkdownTheme } from './theme';
 
 const TEMPLATE_PATH = path.join(__dirname, 'resources', 'templates');
@@ -82,4 +83,5 @@ export function registerHelpers(theme: MarkdownTheme) {
   typeHelper();
   typeAndParentHelper();
   typeParameterTableHelper();
+  storybookHelper(theme)
 }
